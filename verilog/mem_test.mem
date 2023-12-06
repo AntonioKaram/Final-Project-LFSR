@@ -1,0 +1,41 @@
+// .text
+@0000 7af0 // ldi r10, 240
+@0001 7008 // ldi r0, 8
+@0002 5aa0 // shl r10, r10, r0
+@0003 7b50 // ldi r11, 80
+@0004 3aab // or r10, r10, r11
+@0005 7cf0 // ldi r12, 240
+@0006 5cc0 // shl r12, r12, r0
+@0007 7b70 // ldi r11, 112
+@0008 3ccb // or r12, r12, r11
+@0009 7df0 // ldi r13, 240
+@000a 5dd0 // shl r13, r13, r0
+@000b 7101 // ldi r1, 1
+@000c 901a // st r1, r10, 0
+@000d 7102 // ldi r1, 2
+@000e 911a // st r1, r10, 1
+@000f 7103 // ldi r1, 3
+@0010 921a // st r1, r10, 2
+@0011 7104 // ldi r1, 4
+@0012 931a // st r1, r10, 3
+@0013 7203 // ldi r2, 3
+@0014 902c // st r2, r12, 0
+@0015 912c // st r2, r12, 1
+@0016 832c // ld r3, r12, 2    label: loop
+@0017 b023 // bz r3, 2    target label: read
+@0018 afe0 // br -2    target label: loop
+@0019 840a // ld r4, r10, 0    label: read
+@001a 851a // ld r5, r10, 1
+@001b 862a // ld r6, r10, 2
+@001c 873a // ld r7, r10, 3
+@001d 924d // st r4, r13, 2
+@001e 925d // st r5, r13, 2
+@001f 926d // st r6, r13, 2
+@0020 927d // st r7, r13, 2
+@0021 f000 // sys 0
+
+// .data
+@0022 f050 // 520    label: st1
+@0023 f070 // 552    label: len
+@0024 f071 // 553    label: start
+@0025 f072 // 554    label: busy
