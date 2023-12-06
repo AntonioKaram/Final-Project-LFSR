@@ -1,5 +1,5 @@
 `timescale 1ns/1ns
-module mult_tb ();
+module pseudo_tb ();
    reg        clk;
    reg        start;
    reg  [7:0] sw_in;
@@ -8,7 +8,7 @@ module mult_tb ();
    wire       busy;
 
    
-   mult uut (
+   pseudo uut (
       .clk      (clk),
       .start    (start),
       .sw_in    (sw_in),
