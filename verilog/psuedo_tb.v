@@ -2,18 +2,19 @@
 module mult_tb ();
    reg        clk;
    reg        start;
-   reg  [7:0] select;
-   reg  [7:0] taps;
-   wire [7:0] prod;
+   reg  [7:0] sw_in;
+   reg  [7:0] seq_num;
+   wire [7:0] num;
    wire       busy;
+
    
    mult uut (
-      .clk   (clk),
-      .start (start),
-      .select  (select),
-      .taps  (taps),
-      .prod  (prod),
-      .busy  (busy)
+      .clk      (clk),
+      .start    (start),
+      .sw_in    (sw_in),
+      .seq_num  (seq_num),
+      .num      (num),
+      .busy     (busy)
    );
    
    always #5 clk = ~clk;
@@ -21,7 +22,7 @@ module mult_tb ();
    initial begin
 //		start = 1;
 		clk = 0;
-		select = 8'h8; taps = 8'h9;
+		sw_in = 8'h8; seq_num = 8'h9;
 		#10;
 		start = 0;
 		#10;
