@@ -12,7 +12,7 @@ module fkmt #(parameter AWIDTH=5, DWIDTH=8, BITS = 16
 	input wb_rst_i,
 	input  [BITS-1:0] io_in,
     	output [DWIDTH-1:0] io_out,
-	output [1:0] io_oeb,
+	output io_oeb,
 );
 
     wire clk = wb_clk_i;
