@@ -1,0 +1,43 @@
+`default_nettype none
+module fkmt #(parameter AWIDTH=5, DWIDTH=8, BITS = 16
+)(
+
+	`ifdef USE_POWER_PINS
+		inout vdd,	// User area 1 1.8V supply
+		inout vss,	// User area 1 digital ground
+	`endif
+	
+    // Include the Caravel Ports to connect the inputs and outputs
+    input wb_clk_i,
+    input wb_rst_i,
+
+    // IOs
+    input  [DWIDTH-1:0] io_in,
+    output [BITS-1:0] io_out,
+	output [BITS-1:0] io_oeb,
+);
+
+    wire clk = wb_clk_i;
+    wire rst = !wb_rst_i;
+	
+	assign io_oeb = 1'b0;
+
+	wire [DWIDTH-1:0] adr_out;
+	wire [DWIDTH-1:0] writedata_out;
+	
+	pseudo (
+		.clk(clk),
+		.reset(rst),
+		.memdata(io_in[DWIDTH-1:0]),
+		.adr(adr_out),
+		.writedata(writedata_out)
+	);
+
+	/* Map the wires to the io_out */
+	assign io_out[BITS-1:DWIDTH] = adr_out;
+	assign io_out[DWIDTH-1:0] = writedata_out;
+
+endmodule
+
+/* End EFabless Harness project with `default_nettype wire */
+`default_nettype wire
