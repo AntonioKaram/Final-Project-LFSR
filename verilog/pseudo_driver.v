@@ -1,16 +1,36 @@
 module pseudo_driver;
 
-    wire A, B, Y;
+	reg clk;
+	wire busy;
+	reg start;
+	wire [7:0] sw_in;
+	wire [7:0] seq_num;
+	wire [7:0] num;
+	
+	// Generate the Stimulus 
+	pseudo_stim stim(sw_in, seq_num);
+	
+	// Test the circuit using the stimulus 
+	pseudo p0(clk, start, sw_in, seq_num, num, busy);
 
-    // Generate the Stimulus 
-    nand2_Stim stim(A,B);
+	always #5 clk = ~clk;
 
-    // Test the circuit using the stimulus 
-    nand2 n0(A,B,Y);
-
-    initial begin
-        // Will print the values out at the bottom of the Simulation
-        $monitor ("@ time=%d A=%b, B=%b, Y=%d", $time, A, B, Y);
-    end 
-
+	initial begin
+		start = 1;
+		clk = 0;
+		#10;
+		start = 0;
+		#10;
+		start = 1;
+		#10;
+		start = 0;
+		#10;
+		start = 1;
+		#10;
+		while (busy)
+			#10;
+		#10;
+		$monitor ("@ time=%d clk=%b, start=%b, sw_in=%b, seq_num=%b, num=%b, busy=%b", $time, clk, start, sw_in, seq_num, num, busy);
+		$stop;
+   end
 endmodule

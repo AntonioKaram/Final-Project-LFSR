@@ -241,7 +241,7 @@ module pseudo (
 	input  [7:0]  sw_in,
 	input  [7:0]  seq_num,
 	output [7:0]  num,
-   output        busy
+   	output        busy
 );
 	
 	wire busy_en;

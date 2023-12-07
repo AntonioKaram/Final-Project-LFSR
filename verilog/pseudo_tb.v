@@ -20,7 +20,7 @@ module pseudo_tb ();
    always #5 clk = ~clk;
    
    initial begin
-//		start = 1;
+		start = 1;
 		clk = 0;
 		sw_in = 8'h8; seq_num = 8'h9;
 		#10;
