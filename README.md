@@ -1,5 +1,6 @@
 # Digital Integrated Circuits Final Project
 CSE 30342 - Digital Integrated Circuits - University of Notre Dame
+Project Name: Chúis Déag
 
 Varun Taneja       | vtaneja@nd.edu
 Brendan McGinn     | bmcginn2@nd.edu
