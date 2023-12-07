@@ -20,6 +20,8 @@ module user_proj_example #(parameter AWIDTH=5, DWIDTH=9, BITS = 16
     wire [DWIDTH-2:0] out;
 	wire busy;
 
+	assign io_oeb = 1'b0;
+
 	pseudo pseudo (
 		.clk(clk),
 		.start(rst),
@@ -29,7 +31,7 @@ module user_proj_example #(parameter AWIDTH=5, DWIDTH=9, BITS = 16
 		.busy(busy)
 	);
 	assign io_out = {out, busy};
-	assign io_oeb = 1'b0;
+	
 endmodule
 
 module pseudo_controller (
