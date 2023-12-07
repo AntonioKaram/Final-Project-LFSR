@@ -1,5 +1,5 @@
 `default_nettype none
-module fkmt #(parameter AWIDTH=5, DWIDTH=8, BITS = 16
+module user_proj_example #(parameter AWIDTH=5, DWIDTH=9, BITS = 16
 )(
 
 	`ifdef USE_POWER_PINS
@@ -11,13 +11,14 @@ module fkmt #(parameter AWIDTH=5, DWIDTH=8, BITS = 16
 	input wb_clk_i,
 	input wb_rst_i,
 	input  [BITS-1:0] io_in,
-    	output [DWIDTH-1:0] io_out,
-	output io_oeb[DWIDTH-1:0],
+    output [DWIDTH-1:0] io_out,
+	output [DWIDTH-1:0] io_oeb,
 );
 
     wire clk = wb_clk_i;
     wire rst = !wb_rst_i;
-    wire [DWIDTH-1:0] out;
+    wire [DWIDTH-2:0] out;
+	wire busy;
 
 	pseudo pseudo (
 		.clk(clk),
@@ -25,10 +26,10 @@ module fkmt #(parameter AWIDTH=5, DWIDTH=8, BITS = 16
 		.sw_in(io_in[15:8]),
 		.seq_num(io_in[7:0]),
 		.num(out),
-		.busy(io_oeb[0])
+		.busy(busy)
 	);
-	assign io_out = out;
-	assign io_oeb[DWIDTH-1:1] = 0'b0000000;
+	assign io_out = {out, busy};
+	assign io_oeb = 1'b0;
 endmodule
 
 module pseudo_controller (
