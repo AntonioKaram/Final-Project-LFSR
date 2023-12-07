@@ -12,7 +12,7 @@ module fkmt #(parameter AWIDTH=5, DWIDTH=8, BITS = 16
 	input wb_rst_i,
 	input  [BITS-1:0] io_in,
     	output [DWIDTH-1:0] io_out,
-	output io_oeb,
+	output io_oeb[DWIDTH-1:0],
 );
 
     wire clk = wb_clk_i;
@@ -25,9 +25,10 @@ module fkmt #(parameter AWIDTH=5, DWIDTH=8, BITS = 16
 		.sw_in(io_in[15:8]),
 		.seq_num(io_in[7:0]),
 		.num(out),
-		.busy(io_oeb)
+		.busy(io_oeb[0])
 	);
 	assign io_out = out;
+	assign io_oeb[DWIDTH-1:1] = 0'b0000000;
 endmodule
 
 module pseudo_controller (
