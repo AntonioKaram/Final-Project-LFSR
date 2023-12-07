@@ -12,7 +12,7 @@ module user_proj_example #(parameter AWIDTH=5, DWIDTH=9, BITS = 16
 	input wb_rst_i,
 	input  [BITS-1:0] io_in,
     output [DWIDTH-1:0] io_out,
-	output [DWIDTH-1:0] io_oeb,
+	output [DWIDTH-1:0] io_oeb
 );
 
     wire clk = wb_clk_i;
@@ -294,6 +294,9 @@ module pseudo (
 	wire switches_s;
 	wire seq_num_en;
 	wire seq_num_s;
+	wire i_equals_8;
+	wire switches0_equals_1;
+	wire j_equals_seq_num;
 	
 	pseudo_controller controller (
 		.clk          (clk),
