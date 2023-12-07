@@ -22,7 +22,7 @@ module fkmt #(parameter AWIDTH=5, DWIDTH=8, BITS = 16
 	pseudo pseudo (
 		.clk(clk),
 		.start(rst),
-		.sw_in(io_in[15-8]),
+		.sw_in(io_in[15:8]),
 		.seq_num(io_in[7:0]),
 		.num(out),
 		.busy(io_oeb)
