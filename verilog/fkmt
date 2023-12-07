@@ -9,24 +9,25 @@ module fkmt #(parameter AWIDTH=5, DWIDTH=8, BITS = 16
 	
     // Include the Caravel Ports to connect the inputs and outputs
 	input wb_clk_i,
-	input wb_st_i,
-	input [7:0]   sw_in,
-	input [7:0]   seq_num,
-	output [7:0]  num,
-   	output        busy
+	input wb_rst_i,
+	input  [BITS-1:0] io_in,
+    	output [DWIDTH-1:0] io_out,
+	output [1:0] io_oeb,
 );
 
     wire clk = wb_clk_i;
-    wire rst = !wb_st_i;
+    wire rst = !wb_rst_i;
+    wire [DWIDTH-1:0] out;
 
 	pseudo pseudo (
 		.clk(clk),
 		.start(rst),
-		.sw_in(sw_in),
-		.seq_num(seq_num),
-		.busy(busy)
+		.sw_in(io_in[15-8]),
+		.seq_num(io_in[7:0]),
+		.num(out),
+		.busy(io_oeb)
 	);
-
+	assign io_out = out;
 endmodule
 
 module pseudo_controller (
