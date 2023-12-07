@@ -31,7 +31,6 @@ module pseudo_wrapper #(
 		.io_in ({io_in[20:5]}),
 		.io_out({io_out[28:21]}),
 		.io_oeb({io_out[28:21]}),
-		.busy({[29]})
 
 	);
 endmodule	// pseudo
