@@ -2,7 +2,7 @@
 
 CSE 30342 - Digital Integrated Circuits - University of Notre Dame
 
-Project Name: Chúis Déag
+Project Name: Cool Ranch
 
 Varun Taneja       | vtaneja@nd.edu
 
