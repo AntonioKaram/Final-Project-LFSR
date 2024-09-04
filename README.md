@@ -1,4 +1,4 @@
-# Digital Integrated Circuits Final Project
+# LFSR Chip for Google GFMPW-1 Shuttle - Digital Integrated Circuits
 
 CSE 30342 - Digital Integrated Circuits - University of Notre Dame
 
