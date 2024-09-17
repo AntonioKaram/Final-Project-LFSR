@@ -1,0 +1,1415 @@
+*SPEF "ieee 1481-1999"
+*DESIGN "user_project_wrapper"
+*DATE "11:11:11 Fri 11 11, 1111"
+*VENDOR "OpenRCX"
+*PROGRAM "Parallel Extraction"
+*VERSION "1.0"
+*DESIGN_FLOW "NAME_SCOPE LOCAL" "PIN_CAP NONE"
+*DIVIDER /
+*DELIMITER :
+*BUS_DELIMITER []
+*T_UNIT 1 NS
+*C_UNIT 1 PF
+*R_UNIT 1 OHM
+*L_UNIT 1 HENRY
+
+*NAME_MAP
+*1 io_in[0]
+*2 io_in[10]
+*3 io_in[11]
+*4 io_in[12]
+*5 io_in[13]
+*6 io_in[14]
+*7 io_in[15]
+*8 io_in[16]
+*9 io_in[17]
+*10 io_in[18]
+*11 io_in[19]
+*12 io_in[1]
+*13 io_in[20]
+*14 io_in[21]
+*15 io_in[22]
+*16 io_in[23]
+*17 io_in[24]
+*18 io_in[25]
+*19 io_in[26]
+*20 io_in[27]
+*21 io_in[28]
+*22 io_in[29]
+*23 io_in[2]
+*24 io_in[30]
+*25 io_in[31]
+*26 io_in[32]
+*27 io_in[33]
+*28 io_in[34]
+*29 io_in[35]
+*30 io_in[36]
+*31 io_in[37]
+*32 io_in[3]
+*33 io_in[4]
+*34 io_in[5]
+*35 io_in[6]
+*36 io_in[7]
+*37 io_in[8]
+*38 io_in[9]
+*39 io_oeb[0]
+*40 io_oeb[10]
+*41 io_oeb[11]
+*42 io_oeb[12]
+*43 io_oeb[13]
+*44 io_oeb[14]
+*45 io_oeb[15]
+*46 io_oeb[16]
+*47 io_oeb[17]
+*48 io_oeb[18]
+*49 io_oeb[19]
+*50 io_oeb[1]
+*51 io_oeb[20]
+*52 io_oeb[21]
+*53 io_oeb[22]
+*54 io_oeb[23]
+*55 io_oeb[24]
+*56 io_oeb[25]
+*57 io_oeb[26]
+*58 io_oeb[27]
+*59 io_oeb[28]
+*60 io_oeb[29]
+*61 io_oeb[2]
+*62 io_oeb[30]
+*63 io_oeb[31]
+*64 io_oeb[32]
+*65 io_oeb[33]
+*66 io_oeb[34]
+*67 io_oeb[35]
+*68 io_oeb[36]
+*69 io_oeb[37]
+*70 io_oeb[3]
+*71 io_oeb[4]
+*72 io_oeb[5]
+*73 io_oeb[6]
+*74 io_oeb[7]
+*75 io_oeb[8]
+*76 io_oeb[9]
+*77 io_out[0]
+*78 io_out[10]
+*79 io_out[11]
+*80 io_out[12]
+*81 io_out[13]
+*82 io_out[14]
+*83 io_out[15]
+*84 io_out[16]
+*85 io_out[17]
+*86 io_out[18]
+*87 io_out[19]
+*88 io_out[1]
+*89 io_out[20]
+*90 io_out[21]
+*91 io_out[22]
+*92 io_out[23]
+*93 io_out[24]
+*94 io_out[25]
+*95 io_out[26]
+*96 io_out[27]
+*97 io_out[28]
+*98 io_out[29]
+*99 io_out[2]
+*100 io_out[30]
+*101 io_out[31]
+*102 io_out[32]
+*103 io_out[33]
+*104 io_out[34]
+*105 io_out[35]
+*106 io_out[36]
+*107 io_out[37]
+*108 io_out[3]
+*109 io_out[4]
+*110 io_out[5]
+*111 io_out[6]
+*112 io_out[7]
+*113 io_out[8]
+*114 io_out[9]
+*115 la_data_in[0]
+*116 la_data_in[10]
+*117 la_data_in[11]
+*118 la_data_in[12]
+*119 la_data_in[13]
+*120 la_data_in[14]
+*121 la_data_in[15]
+*122 la_data_in[16]
+*123 la_data_in[17]
+*124 la_data_in[18]
+*125 la_data_in[19]
+*126 la_data_in[1]
+*127 la_data_in[20]
+*128 la_data_in[21]
+*129 la_data_in[22]
+*130 la_data_in[23]
+*131 la_data_in[24]
+*132 la_data_in[25]
+*133 la_data_in[26]
+*134 la_data_in[27]
+*135 la_data_in[28]
+*136 la_data_in[29]
+*137 la_data_in[2]
+*138 la_data_in[30]
+*139 la_data_in[31]
+*140 la_data_in[32]
+*141 la_data_in[33]
+*142 la_data_in[34]
+*143 la_data_in[35]
+*144 la_data_in[36]
+*145 la_data_in[37]
+*146 la_data_in[38]
+*147 la_data_in[39]
+*148 la_data_in[3]
+*149 la_data_in[40]
+*150 la_data_in[41]
+*151 la_data_in[42]
+*152 la_data_in[43]
+*153 la_data_in[44]
+*154 la_data_in[45]
+*155 la_data_in[46]
+*156 la_data_in[47]
+*157 la_data_in[48]
+*158 la_data_in[49]
+*159 la_data_in[4]
+*160 la_data_in[50]
+*161 la_data_in[51]
+*162 la_data_in[52]
+*163 la_data_in[53]
+*164 la_data_in[54]
+*165 la_data_in[55]
+*166 la_data_in[56]
+*167 la_data_in[57]
+*168 la_data_in[58]
+*169 la_data_in[59]
+*170 la_data_in[5]
+*171 la_data_in[60]
+*172 la_data_in[61]
+*173 la_data_in[62]
+*174 la_data_in[63]
+*175 la_data_in[6]
+*176 la_data_in[7]
+*177 la_data_in[8]
+*178 la_data_in[9]
+*179 la_data_out[0]
+*180 la_data_out[10]
+*181 la_data_out[11]
+*182 la_data_out[12]
+*183 la_data_out[13]
+*184 la_data_out[14]
+*185 la_data_out[15]
+*186 la_data_out[16]
+*187 la_data_out[17]
+*188 la_data_out[18]
+*189 la_data_out[19]
+*190 la_data_out[1]
+*191 la_data_out[20]
+*192 la_data_out[21]
+*193 la_data_out[22]
+*194 la_data_out[23]
+*195 la_data_out[24]
+*196 la_data_out[25]
+*197 la_data_out[26]
+*198 la_data_out[27]
+*199 la_data_out[28]
+*200 la_data_out[29]
+*201 la_data_out[2]
+*202 la_data_out[30]
+*203 la_data_out[31]
+*204 la_data_out[32]
+*205 la_data_out[33]
+*206 la_data_out[34]
+*207 la_data_out[35]
+*208 la_data_out[36]
+*209 la_data_out[37]
+*210 la_data_out[38]
+*211 la_data_out[39]
+*212 la_data_out[3]
+*213 la_data_out[40]
+*214 la_data_out[41]
+*215 la_data_out[42]
+*216 la_data_out[43]
+*217 la_data_out[44]
+*218 la_data_out[45]
+*219 la_data_out[46]
+*220 la_data_out[47]
+*221 la_data_out[48]
+*222 la_data_out[49]
+*223 la_data_out[4]
+*224 la_data_out[50]
+*225 la_data_out[51]
+*226 la_data_out[52]
+*227 la_data_out[53]
+*228 la_data_out[54]
+*229 la_data_out[55]
+*230 la_data_out[56]
+*231 la_data_out[57]
+*232 la_data_out[58]
+*233 la_data_out[59]
+*234 la_data_out[5]
+*235 la_data_out[60]
+*236 la_data_out[61]
+*237 la_data_out[62]
+*238 la_data_out[63]
+*239 la_data_out[6]
+*240 la_data_out[7]
+*241 la_data_out[8]
+*242 la_data_out[9]
+*243 la_oenb[0]
+*244 la_oenb[10]
+*245 la_oenb[11]
+*246 la_oenb[12]
+*247 la_oenb[13]
+*248 la_oenb[14]
+*249 la_oenb[15]
+*250 la_oenb[16]
+*251 la_oenb[17]
+*252 la_oenb[18]
+*253 la_oenb[19]
+*254 la_oenb[1]
+*255 la_oenb[20]
+*256 la_oenb[21]
+*257 la_oenb[22]
+*258 la_oenb[23]
+*259 la_oenb[24]
+*260 la_oenb[25]
+*261 la_oenb[26]
+*262 la_oenb[27]
+*263 la_oenb[28]
+*264 la_oenb[29]
+*265 la_oenb[2]
+*266 la_oenb[30]
+*267 la_oenb[31]
+*268 la_oenb[32]
+*269 la_oenb[33]
+*270 la_oenb[34]
+*271 la_oenb[35]
+*272 la_oenb[36]
+*273 la_oenb[37]
+*274 la_oenb[38]
+*275 la_oenb[39]
+*276 la_oenb[3]
+*277 la_oenb[40]
+*278 la_oenb[41]
+*279 la_oenb[42]
+*280 la_oenb[43]
+*281 la_oenb[44]
+*282 la_oenb[45]
+*283 la_oenb[46]
+*284 la_oenb[47]
+*285 la_oenb[48]
+*286 la_oenb[49]
+*287 la_oenb[4]
+*288 la_oenb[50]
+*289 la_oenb[51]
+*290 la_oenb[52]
+*291 la_oenb[53]
+*292 la_oenb[54]
+*293 la_oenb[55]
+*294 la_oenb[56]
+*295 la_oenb[57]
+*296 la_oenb[58]
+*297 la_oenb[59]
+*298 la_oenb[5]
+*299 la_oenb[60]
+*300 la_oenb[61]
+*301 la_oenb[62]
+*302 la_oenb[63]
+*303 la_oenb[6]
+*304 la_oenb[7]
+*305 la_oenb[8]
+*306 la_oenb[9]
+*307 user_clock2
+*308 user_irq[0]
+*309 user_irq[1]
+*310 user_irq[2]
+*313 wb_clk_i
+*314 wb_rst_i
+*315 wbs_ack_o
+*316 wbs_adr_i[0]
+*317 wbs_adr_i[10]
+*318 wbs_adr_i[11]
+*319 wbs_adr_i[12]
+*320 wbs_adr_i[13]
+*321 wbs_adr_i[14]
+*322 wbs_adr_i[15]
+*323 wbs_adr_i[16]
+*324 wbs_adr_i[17]
+*325 wbs_adr_i[18]
+*326 wbs_adr_i[19]
+*327 wbs_adr_i[1]
+*328 wbs_adr_i[20]
+*329 wbs_adr_i[21]
+*330 wbs_adr_i[22]
+*331 wbs_adr_i[23]
+*332 wbs_adr_i[24]
+*333 wbs_adr_i[25]
+*334 wbs_adr_i[26]
+*335 wbs_adr_i[27]
+*336 wbs_adr_i[28]
+*337 wbs_adr_i[29]
+*338 wbs_adr_i[2]
+*339 wbs_adr_i[30]
+*340 wbs_adr_i[31]
+*341 wbs_adr_i[3]
+*342 wbs_adr_i[4]
+*343 wbs_adr_i[5]
+*344 wbs_adr_i[6]
+*345 wbs_adr_i[7]
+*346 wbs_adr_i[8]
+*347 wbs_adr_i[9]
+*348 wbs_cyc_i
+*349 wbs_dat_i[0]
+*350 wbs_dat_i[10]
+*351 wbs_dat_i[11]
+*352 wbs_dat_i[12]
+*353 wbs_dat_i[13]
+*354 wbs_dat_i[14]
+*355 wbs_dat_i[15]
+*356 wbs_dat_i[16]
+*357 wbs_dat_i[17]
+*358 wbs_dat_i[18]
+*359 wbs_dat_i[19]
+*360 wbs_dat_i[1]
+*361 wbs_dat_i[20]
+*362 wbs_dat_i[21]
+*363 wbs_dat_i[22]
+*364 wbs_dat_i[23]
+*365 wbs_dat_i[24]
+*366 wbs_dat_i[25]
+*367 wbs_dat_i[26]
+*368 wbs_dat_i[27]
+*369 wbs_dat_i[28]
+*370 wbs_dat_i[29]
+*371 wbs_dat_i[2]
+*372 wbs_dat_i[30]
+*373 wbs_dat_i[31]
+*374 wbs_dat_i[3]
+*375 wbs_dat_i[4]
+*376 wbs_dat_i[5]
+*377 wbs_dat_i[6]
+*378 wbs_dat_i[7]
+*379 wbs_dat_i[8]
+*380 wbs_dat_i[9]
+*381 wbs_dat_o[0]
+*382 wbs_dat_o[10]
+*383 wbs_dat_o[11]
+*384 wbs_dat_o[12]
+*385 wbs_dat_o[13]
+*386 wbs_dat_o[14]
+*387 wbs_dat_o[15]
+*388 wbs_dat_o[16]
+*389 wbs_dat_o[17]
+*390 wbs_dat_o[18]
+*391 wbs_dat_o[19]
+*392 wbs_dat_o[1]
+*393 wbs_dat_o[20]
+*394 wbs_dat_o[21]
+*395 wbs_dat_o[22]
+*396 wbs_dat_o[23]
+*397 wbs_dat_o[24]
+*398 wbs_dat_o[25]
+*399 wbs_dat_o[26]
+*400 wbs_dat_o[27]
+*401 wbs_dat_o[28]
+*402 wbs_dat_o[29]
+*403 wbs_dat_o[2]
+*404 wbs_dat_o[30]
+*405 wbs_dat_o[31]
+*406 wbs_dat_o[3]
+*407 wbs_dat_o[4]
+*408 wbs_dat_o[5]
+*409 wbs_dat_o[6]
+*410 wbs_dat_o[7]
+*411 wbs_dat_o[8]
+*412 wbs_dat_o[9]
+*413 wbs_sel_i[0]
+*414 wbs_sel_i[1]
+*415 wbs_sel_i[2]
+*416 wbs_sel_i[3]
+*417 wbs_stb_i
+*418 wbs_we_i
+*419 mprj
+
+*PORTS
+io_in[0] I
+io_in[10] I
+io_in[11] I
+io_in[12] I
+io_in[13] I
+io_in[14] I
+io_in[15] I
+io_in[16] I
+io_in[17] I
+io_in[18] I
+io_in[19] I
+io_in[1] I
+io_in[20] I
+io_in[21] I
+io_in[22] I
+io_in[23] I
+io_in[24] I
+io_in[25] I
+io_in[26] I
+io_in[27] I
+io_in[28] I
+io_in[29] I
+io_in[2] I
+io_in[30] I
+io_in[31] I
+io_in[32] I
+io_in[33] I
+io_in[34] I
+io_in[35] I
+io_in[36] I
+io_in[37] I
+io_in[3] I
+io_in[4] I
+io_in[5] I
+io_in[6] I
+io_in[7] I
+io_in[8] I
+io_in[9] I
+io_oeb[0] O
+io_oeb[10] O
+io_oeb[11] O
+io_oeb[12] O
+io_oeb[13] O
+io_oeb[14] O
+io_oeb[15] O
+io_oeb[16] O
+io_oeb[17] O
+io_oeb[18] O
+io_oeb[19] O
+io_oeb[1] O
+io_oeb[20] O
+io_oeb[21] O
+io_oeb[22] O
+io_oeb[23] O
+io_oeb[24] O
+io_oeb[25] O
+io_oeb[26] O
+io_oeb[27] O
+io_oeb[28] O
+io_oeb[29] O
+io_oeb[2] O
+io_oeb[30] O
+io_oeb[31] O
+io_oeb[32] O
+io_oeb[33] O
+io_oeb[34] O
+io_oeb[35] O
+io_oeb[36] O
+io_oeb[37] O
+io_oeb[3] O
+io_oeb[4] O
+io_oeb[5] O
+io_oeb[6] O
+io_oeb[7] O
+io_oeb[8] O
+io_oeb[9] O
+io_out[0] O
+io_out[10] O
+io_out[11] O
+io_out[12] O
+io_out[13] O
+io_out[14] O
+io_out[15] O
+io_out[16] O
+io_out[17] O
+io_out[18] O
+io_out[19] O
+io_out[1] O
+io_out[20] O
+io_out[21] O
+io_out[22] O
+io_out[23] O
+io_out[24] O
+io_out[25] O
+io_out[26] O
+io_out[27] O
+io_out[28] O
+io_out[29] O
+io_out[2] O
+io_out[30] O
+io_out[31] O
+io_out[32] O
+io_out[33] O
+io_out[34] O
+io_out[35] O
+io_out[36] O
+io_out[37] O
+io_out[3] O
+io_out[4] O
+io_out[5] O
+io_out[6] O
+io_out[7] O
+io_out[8] O
+io_out[9] O
+la_data_in[0] I
+la_data_in[10] I
+la_data_in[11] I
+la_data_in[12] I
+la_data_in[13] I
+la_data_in[14] I
+la_data_in[15] I
+la_data_in[16] I
+la_data_in[17] I
+la_data_in[18] I
+la_data_in[19] I
+la_data_in[1] I
+la_data_in[20] I
+la_data_in[21] I
+la_data_in[22] I
+la_data_in[23] I
+la_data_in[24] I
+la_data_in[25] I
+la_data_in[26] I
+la_data_in[27] I
+la_data_in[28] I
+la_data_in[29] I
+la_data_in[2] I
+la_data_in[30] I
+la_data_in[31] I
+la_data_in[32] I
+la_data_in[33] I
+la_data_in[34] I
+la_data_in[35] I
+la_data_in[36] I
+la_data_in[37] I
+la_data_in[38] I
+la_data_in[39] I
+la_data_in[3] I
+la_data_in[40] I
+la_data_in[41] I
+la_data_in[42] I
+la_data_in[43] I
+la_data_in[44] I
+la_data_in[45] I
+la_data_in[46] I
+la_data_in[47] I
+la_data_in[48] I
+la_data_in[49] I
+la_data_in[4] I
+la_data_in[50] I
+la_data_in[51] I
+la_data_in[52] I
+la_data_in[53] I
+la_data_in[54] I
+la_data_in[55] I
+la_data_in[56] I
+la_data_in[57] I
+la_data_in[58] I
+la_data_in[59] I
+la_data_in[5] I
+la_data_in[60] I
+la_data_in[61] I
+la_data_in[62] I
+la_data_in[63] I
+la_data_in[6] I
+la_data_in[7] I
+la_data_in[8] I
+la_data_in[9] I
+la_data_out[0] O
+la_data_out[10] O
+la_data_out[11] O
+la_data_out[12] O
+la_data_out[13] O
+la_data_out[14] O
+la_data_out[15] O
+la_data_out[16] O
+la_data_out[17] O
+la_data_out[18] O
+la_data_out[19] O
+la_data_out[1] O
+la_data_out[20] O
+la_data_out[21] O
+la_data_out[22] O
+la_data_out[23] O
+la_data_out[24] O
+la_data_out[25] O
+la_data_out[26] O
+la_data_out[27] O
+la_data_out[28] O
+la_data_out[29] O
+la_data_out[2] O
+la_data_out[30] O
+la_data_out[31] O
+la_data_out[32] O
+la_data_out[33] O
+la_data_out[34] O
+la_data_out[35] O
+la_data_out[36] O
+la_data_out[37] O
+la_data_out[38] O
+la_data_out[39] O
+la_data_out[3] O
+la_data_out[40] O
+la_data_out[41] O
+la_data_out[42] O
+la_data_out[43] O
+la_data_out[44] O
+la_data_out[45] O
+la_data_out[46] O
+la_data_out[47] O
+la_data_out[48] O
+la_data_out[49] O
+la_data_out[4] O
+la_data_out[50] O
+la_data_out[51] O
+la_data_out[52] O
+la_data_out[53] O
+la_data_out[54] O
+la_data_out[55] O
+la_data_out[56] O
+la_data_out[57] O
+la_data_out[58] O
+la_data_out[59] O
+la_data_out[5] O
+la_data_out[60] O
+la_data_out[61] O
+la_data_out[62] O
+la_data_out[63] O
+la_data_out[6] O
+la_data_out[7] O
+la_data_out[8] O
+la_data_out[9] O
+la_oenb[0] I
+la_oenb[10] I
+la_oenb[11] I
+la_oenb[12] I
+la_oenb[13] I
+la_oenb[14] I
+la_oenb[15] I
+la_oenb[16] I
+la_oenb[17] I
+la_oenb[18] I
+la_oenb[19] I
+la_oenb[1] I
+la_oenb[20] I
+la_oenb[21] I
+la_oenb[22] I
+la_oenb[23] I
+la_oenb[24] I
+la_oenb[25] I
+la_oenb[26] I
+la_oenb[27] I
+la_oenb[28] I
+la_oenb[29] I
+la_oenb[2] I
+la_oenb[30] I
+la_oenb[31] I
+la_oenb[32] I
+la_oenb[33] I
+la_oenb[34] I
+la_oenb[35] I
+la_oenb[36] I
+la_oenb[37] I
+la_oenb[38] I
+la_oenb[39] I
+la_oenb[3] I
+la_oenb[40] I
+la_oenb[41] I
+la_oenb[42] I
+la_oenb[43] I
+la_oenb[44] I
+la_oenb[45] I
+la_oenb[46] I
+la_oenb[47] I
+la_oenb[48] I
+la_oenb[49] I
+la_oenb[4] I
+la_oenb[50] I
+la_oenb[51] I
+la_oenb[52] I
+la_oenb[53] I
+la_oenb[54] I
+la_oenb[55] I
+la_oenb[56] I
+la_oenb[57] I
+la_oenb[58] I
+la_oenb[59] I
+la_oenb[5] I
+la_oenb[60] I
+la_oenb[61] I
+la_oenb[62] I
+la_oenb[63] I
+la_oenb[6] I
+la_oenb[7] I
+la_oenb[8] I
+la_oenb[9] I
+user_clock2 I
+user_irq[0] O
+user_irq[1] O
+user_irq[2] O
+wb_clk_i I
+wb_rst_i I
+wbs_ack_o O
+wbs_adr_i[0] I
+wbs_adr_i[10] I
+wbs_adr_i[11] I
+wbs_adr_i[12] I
+wbs_adr_i[13] I
+wbs_adr_i[14] I
+wbs_adr_i[15] I
+wbs_adr_i[16] I
+wbs_adr_i[17] I
+wbs_adr_i[18] I
+wbs_adr_i[19] I
+wbs_adr_i[1] I
+wbs_adr_i[20] I
+wbs_adr_i[21] I
+wbs_adr_i[22] I
+wbs_adr_i[23] I
+wbs_adr_i[24] I
+wbs_adr_i[25] I
+wbs_adr_i[26] I
+wbs_adr_i[27] I
+wbs_adr_i[28] I
+wbs_adr_i[29] I
+wbs_adr_i[2] I
+wbs_adr_i[30] I
+wbs_adr_i[31] I
+wbs_adr_i[3] I
+wbs_adr_i[4] I
+wbs_adr_i[5] I
+wbs_adr_i[6] I
+wbs_adr_i[7] I
+wbs_adr_i[8] I
+wbs_adr_i[9] I
+wbs_cyc_i I
+wbs_dat_i[0] I
+wbs_dat_i[10] I
+wbs_dat_i[11] I
+wbs_dat_i[12] I
+wbs_dat_i[13] I
+wbs_dat_i[14] I
+wbs_dat_i[15] I
+wbs_dat_i[16] I
+wbs_dat_i[17] I
+wbs_dat_i[18] I
+wbs_dat_i[19] I
+wbs_dat_i[1] I
+wbs_dat_i[20] I
+wbs_dat_i[21] I
+wbs_dat_i[22] I
+wbs_dat_i[23] I
+wbs_dat_i[24] I
+wbs_dat_i[25] I
+wbs_dat_i[26] I
+wbs_dat_i[27] I
+wbs_dat_i[28] I
+wbs_dat_i[29] I
+wbs_dat_i[2] I
+wbs_dat_i[30] I
+wbs_dat_i[31] I
+wbs_dat_i[3] I
+wbs_dat_i[4] I
+wbs_dat_i[5] I
+wbs_dat_i[6] I
+wbs_dat_i[7] I
+wbs_dat_i[8] I
+wbs_dat_i[9] I
+wbs_dat_o[0] O
+wbs_dat_o[10] O
+wbs_dat_o[11] O
+wbs_dat_o[12] O
+wbs_dat_o[13] O
+wbs_dat_o[14] O
+wbs_dat_o[15] O
+wbs_dat_o[16] O
+wbs_dat_o[17] O
+wbs_dat_o[18] O
+wbs_dat_o[19] O
+wbs_dat_o[1] O
+wbs_dat_o[20] O
+wbs_dat_o[21] O
+wbs_dat_o[22] O
+wbs_dat_o[23] O
+wbs_dat_o[24] O
+wbs_dat_o[25] O
+wbs_dat_o[26] O
+wbs_dat_o[27] O
+wbs_dat_o[28] O
+wbs_dat_o[29] O
+wbs_dat_o[2] O
+wbs_dat_o[30] O
+wbs_dat_o[31] O
+wbs_dat_o[3] O
+wbs_dat_o[4] O
+wbs_dat_o[5] O
+wbs_dat_o[6] O
+wbs_dat_o[7] O
+wbs_dat_o[8] O
+wbs_dat_o[9] O
+wbs_sel_i[0] I
+wbs_sel_i[1] I
+wbs_sel_i[2] I
+wbs_sel_i[3] I
+wbs_stb_i I
+wbs_we_i I
+
+*D_NET *2 0.0861448
+*CONN
+*P io_in[10] I
+*I *419:io_in[5] I *D user_proj_example
+*CAP
+1 io_in[10] 0.0061747
+2 *419:io_in[5] 0.00090385
+3 *2:9 0.0368977
+4 *2:7 0.0359939
+5 *2:5 0.0061747
+*RES
+1 io_in[10] *2:5 53.3 
+2 *2:5 *2:7 4.5 
+3 *2:7 *2:9 322.504 
+4 *2:9 *419:io_in[5] 12.04 
+*END
+
+*D_NET *3 0.23591
+*CONN
+*P io_in[11] I
+*I *419:io_in[6] I *D user_proj_example
+*CAP
+1 io_in[11] 0.00118963
+2 *419:io_in[6] 0.00595339
+3 *3:11 0.00595339
+4 *3:9 0.00137433
+5 *3:7 0.00256396
+6 *3:9 *4:9 0.0256684
+7 *3:9 *6:9 0.126061
+8 *3:9 *38:9 0.0671457
+*RES
+1 io_in[11] *3:7 13.912 
+2 *3:7 *3:9 315.016 
+3 *3:9 *3:11 4.5 
+4 *3:11 *419:io_in[6] 51.428 
+*END
+
+*D_NET *4 0.120967
+*CONN
+*P io_in[12] I
+*I *419:io_in[7] I *D user_proj_example
+*CAP
+1 io_in[12] 0.00112292
+2 *419:io_in[7] 0.00604165
+3 *4:11 0.00604165
+4 *4:9 0.0187115
+5 *4:7 0.0198344
+6 *4:9 *6:9 0.00879657
+7 *4:9 *38:9 0.0347497
+8 *3:9 *4:9 0.0256684
+*RES
+1 io_in[12] *4:7 13.496 
+2 *4:7 *4:9 307.528 
+3 *4:9 *4:11 4.5 
+4 *4:11 *419:io_in[7] 51.844 
+*END
+
+*D_NET *5 0.329001
+*CONN
+*P io_in[13] I
+*I *419:io_in[8] I *D user_proj_example
+*CAP
+1 io_in[13] 0.125782
+2 *419:io_in[8] 0.000315653
+3 *5:9 0.0387189
+4 *5:7 0.0384032
+5 *5:5 0.125782
+*RES
+1 io_in[13] *5:5 1103.28 
+2 *5:5 *5:7 4.5 
+3 *5:7 *5:9 344.136 
+4 *5:9 *419:io_in[8] 7.256 
+*END
+
+*D_NET *6 0.465224
+*CONN
+*P io_in[14] I
+*I *419:io_in[9] I *D user_proj_example
+*CAP
+1 io_in[14] 0.00145946
+2 *419:io_in[9] 3.00654e-05
+3 *6:13 0.110158
+4 *6:11 0.110128
+5 *6:9 0.0439441
+6 *6:7 0.0454036
+7 *6:9 *35:9 0.0098499
+8 *6:9 *38:9 0.00939266
+9 *3:9 *6:9 0.126061
+10 *4:9 *6:9 0.00879657
+*RES
+1 io_in[14] *6:7 14.12 
+2 *6:7 *6:9 613.767 
+3 *6:9 *6:11 4.5 
+4 *6:11 *6:13 466.817 
+5 *6:13 *419:io_in[9] 9.16714 
+*END
+
+*D_NET *7 0.38373
+*CONN
+*P io_in[15] I
+*I *419:io_in[10] I *D user_proj_example
+*CAP
+1 io_in[15] 0.00119402
+2 *419:io_in[10] 0.000336095
+3 *7:15 0.109268
+4 *7:13 0.108932
+5 *7:11 0.0814026
+6 *7:9 0.0825966
+*RES
+1 io_in[15] *7:9 19.244 
+2 *7:9 *7:11 728.279 
+3 *7:11 *7:13 4.5 
+4 *7:13 *7:15 462.452 
+5 *7:15 *419:io_in[10] 11.8934 
+*END
+
+*D_NET *8 0.37374
+*CONN
+*P io_in[16] I
+*I *419:io_in[11] I *D user_proj_example
+*CAP
+1 io_in[16] 0.00141595
+2 *419:io_in[11] 0.000313489
+3 *8:17 0.0966187
+4 *8:15 0.0963052
+5 *8:13 0.0887275
+6 *8:11 0.0901435
+7 *8:11 *92:23 0.000215216
+*RES
+1 io_in[16] *8:11 21.22 
+2 *8:11 *8:13 793.799 
+3 *8:13 *8:15 4.5 
+4 *8:15 *8:17 408.997 
+5 *8:17 *419:io_in[11] 11.6854 
+*END
+
+*D_NET *9 0.363578
+*CONN
+*P io_in[17] I
+*I *419:io_in[12] I *D user_proj_example
+*CAP
+1 io_in[17] 0.00133528
+2 *419:io_in[12] 0.000293394
+3 *9:17 0.0843579
+4 *9:15 0.0840646
+5 *9:13 0.0960626
+6 *9:11 0.0973978
+7 *9:11 *92:23 6.67191e-05
+*RES
+1 io_in[17] *9:11 19.972 
+2 *9:11 *9:13 859.319 
+3 *9:13 *9:15 4.5 
+4 *9:15 *9:17 356.879 
+5 *9:17 *419:io_in[12] 11.4774 
+*END
+
+*D_NET *10 0.353707
+*CONN
+*P io_in[18] I
+*I *419:io_in[13] I *D user_proj_example
+*CAP
+1 io_in[18] 0.00145628
+2 *419:io_in[13] 0.000270787
+3 *10:17 0.0718549
+4 *10:15 0.0715841
+5 *10:13 0.103398
+6 *10:11 0.104854
+7 *10:11 *92:23 0.000289465
+*RES
+1 io_in[18] *10:11 21.844 
+2 *10:11 *10:13 924.839 
+3 *10:13 *10:15 4.5 
+4 *10:15 *10:17 303.425 
+5 *10:17 *419:io_in[13] 11.2694 
+*END
+
+*D_NET *11 0.353625
+*CONN
+*P io_in[19] I
+*I *419:io_in[14] I *D user_proj_example
+*CAP
+1 io_in[19] 0.00137561
+2 *419:io_in[14] 0.000248181
+3 *11:17 0.0646337
+4 *11:15 0.0643855
+5 *11:13 0.110733
+6 *11:11 0.112108
+7 *11:11 *92:23 0.000140968
+*RES
+1 io_in[19] *11:11 20.596 
+2 *11:11 *11:13 990.359 
+3 *11:13 *11:15 4.5 
+4 *11:15 *11:17 251.306 
+5 *11:17 *419:io_in[14] 11.0614 
+*END
+
+*D_NET *13 0.513809
+*CONN
+*P io_in[20] I
+*I *419:io_in[15] I *D user_proj_example
+*CAP
+1 io_in[20] 0.00123478
+2 *419:io_in[15] 0.000225574
+3 *13:15 0.13759
+4 *13:13 0.137364
+5 *13:11 0.11808
+6 *13:9 0.119315
+*RES
+1 io_in[20] *13:9 19.244 
+2 *13:9 *13:11 1055.88 
+3 *13:11 *13:13 4.5 
+4 *13:13 *13:15 199.188 
+5 *13:15 *419:io_in[15] 10.8534 
+*END
+
+*D_NET *34 0.0944304
+*CONN
+*P io_in[5] I
+*I *419:io_in[0] I *D user_proj_example
+*CAP
+1 io_in[5] 0.0061962
+2 *419:io_in[0] 0.000835622
+3 *34:9 0.041019
+4 *34:7 0.0401834
+5 *34:5 0.0061962
+*RES
+1 io_in[5] *34:5 53.3 
+2 *34:5 *34:7 4.5 
+3 *34:7 *34:9 359.944 
+4 *34:9 *419:io_in[0] 12.04 
+*END
+
+*D_NET *35 0.131687
+*CONN
+*P io_in[6] I
+*I *419:io_in[1] I *D user_proj_example
+*CAP
+1 io_in[6] 0.00118965
+2 *419:io_in[1] 0.00577768
+3 *35:11 0.00577768
+4 *35:9 0.0321347
+5 *35:7 0.0333244
+6 *35:9 *38:9 0.0436326
+7 *6:9 *35:9 0.0098499
+*RES
+1 io_in[6] *35:7 13.912 
+2 *35:7 *35:9 352.456 
+3 *35:9 *35:11 4.5 
+4 *35:11 *419:io_in[1] 51.428 
+*END
+
+*D_NET *36 0.0914826
+*CONN
+*P io_in[7] I
+*I *419:io_in[2] I *D user_proj_example
+*CAP
+1 io_in[7] 0.00551802
+2 *419:io_in[2] 0.00155699
+3 *36:9 0.0402233
+4 *36:7 0.0386663
+5 *36:5 0.00551802
+*RES
+1 io_in[7] *36:5 47.06 
+2 *36:5 *36:7 4.5 
+3 *36:7 *36:9 344.968 
+4 *36:9 *419:io_in[2] 18.28 
+*END
+
+*D_NET *37 0.089795
+*CONN
+*P io_in[8] I
+*I *419:io_in[3] I *D user_proj_example
+*CAP
+1 io_in[8] 0.00517894
+2 *419:io_in[3] 0.00193928
+3 *37:9 0.0397185
+4 *37:7 0.0429582
+*RES
+1 io_in[8] *37:7 48.44 
+2 *37:7 *37:9 337.48 
+3 *37:9 *419:io_in[3] 21.4 
+*END
+
+*D_NET *38 0.198221
+*CONN
+*P io_in[9] I
+*I *419:io_in[4] I *D user_proj_example
+*CAP
+1 io_in[9] 0.00141535
+2 *419:io_in[4] 0.00592057
+3 *38:11 0.00592057
+4 *38:9 0.0143143
+5 *38:7 0.0157296
+6 *3:9 *38:9 0.0671457
+7 *4:9 *38:9 0.0347497
+8 *6:9 *38:9 0.00939266
+9 *35:9 *38:9 0.0436326
+*RES
+1 io_in[9] *38:7 13.704 
+2 *38:7 *38:9 329.992 
+3 *38:9 *38:11 4.5 
+4 *38:11 *419:io_in[4] 51.636 
+*END
+
+*D_NET *90 0.387603
+*CONN
+*P io_out[21] O
+*I *419:io_oeb[0] O *D user_proj_example
+*I *419:io_out[0] O *D user_proj_example
+*CAP
+1 io_out[21] 0.00136217
+2 *419:io_oeb[0] 0.00717813
+3 *419:io_out[0] 0.00392696
+4 *90:33 0.115184
+5 *90:31 0.113822
+6 *90:29 0.071381
+7 *90:27 0.0746321
+8 io_out[21] *92:23 0.000116216
+*RES
+1 *419:io_out[0] *419:io_oeb[0] 42.072 
+2 *419:io_oeb[0] *90:27 21.6607 
+3 *90:27 *90:29 304.805 
+4 *90:29 *90:31 4.5 
+5 *90:31 *90:33 1018.44 
+6 *90:33 io_out[21] 20.388 
+*END
+
+*D_NET *91 0.985767
+*CONN
+*P io_out[22] O
+*I *419:io_oeb[1] O *D user_proj_example
+*I *419:io_out[1] O *D user_proj_example
+*CAP
+1 io_out[22] 0.00111232
+2 *419:io_oeb[1] 0.000338414
+3 *419:io_out[1] 0.00358854
+4 *91:23 0.0514729
+5 *91:21 0.0503606
+6 *91:19 0.059449
+7 *91:9 0.063376
+8 *91:19 *92:9 0.0105958
+9 *91:19 *92:19 0.335245
+10 *91:19 *93:9 0.00230992
+11 *91:19 *93:19 0.0638362
+12 *91:23 *92:23 0.344082
+*RES
+1 *419:io_out[1] *91:9 34.608 
+2 *91:9 *419:io_oeb[1] 7.464 
+3 *91:9 *91:19 940.264 
+4 *91:19 *91:21 4.5 
+5 *91:21 *91:23 863.72 
+6 *91:23 io_out[22] 13.912 
+*END
+
+*D_NET *92 0.957934
+*CONN
+*P io_out[23] O
+*I *419:io_oeb[2] O *D user_proj_example
+*I *419:io_out[2] O *D user_proj_example
+*CAP
+1 io_out[23] 0.00113656
+2 *419:io_oeb[2] 0.000382715
+3 *419:io_out[2] 0.00200953
+4 *92:23 0.0653456
+5 *92:21 0.064209
+6 *92:19 0.051335
+7 *92:9 0.0537273
+8 *92:19 *93:9 0.000941058
+9 *92:19 *93:19 0.00186227
+10 *92:19 *94:9 0.00115496
+11 *92:19 *94:19 0.0250779
+12 io_out[21] *92:23 0.000116216
+13 *8:11 *92:23 0.000215216
+14 *9:11 *92:23 6.67191e-05
+15 *10:11 *92:23 0.000289465
+16 *11:11 *92:23 0.000140968
+17 *91:19 *92:9 0.0105958
+18 *91:19 *92:19 0.335245
+19 *91:23 *92:23 0.344082
+*RES
+1 *419:io_out[2] *92:9 34.816 
+2 *92:9 *419:io_oeb[2] 7.672 
+3 *92:9 *92:19 858.936 
+4 *92:19 *92:21 4.5 
+5 *92:21 *92:23 986.856 
+6 *92:23 io_out[23] 14.12 
+*END
+
+*D_NET *93 0.660805
+*CONN
+*P io_out[24] O
+*I *419:io_oeb[3] O *D user_proj_example
+*I *419:io_out[3] O *D user_proj_example
+*CAP
+1 io_out[24] 0.119364
+2 *419:io_oeb[3] 0.000439575
+3 *419:io_out[3] 0.00332689
+4 *93:21 0.119364
+5 *93:19 0.0501816
+6 *93:9 0.0539481
+7 *93:19 *94:9 0.0108277
+8 *93:19 *94:19 0.234404
+9 *91:19 *93:9 0.00230992
+10 *91:19 *93:19 0.0638362
+11 *92:19 *93:9 0.000941058
+12 *92:19 *93:19 0.00186227
+*RES
+1 *419:io_out[3] *93:9 34.608 
+2 *93:9 *419:io_oeb[3] 7.464 
+3 *93:9 *93:19 745.368 
+4 *93:19 *93:21 4.5 
+5 *93:21 io_out[24] 1047.75 
+*END
+
+*D_NET *94 0.714659
+*CONN
+*P io_out[25] O
+*I *419:io_oeb[4] O *D user_proj_example
+*I *419:io_out[4] O *D user_proj_example
+*CAP
+1 io_out[25] 0.119421
+2 *419:io_oeb[4] 0.000404475
+3 *419:io_out[4] 0.00200872
+4 *94:21 0.119421
+5 *94:19 0.00906194
+6 *94:9 0.0114751
+7 *94:19 *95:9 0.0109042
+8 *94:19 *95:19 0.170498
+9 *92:19 *94:9 0.00115496
+10 *92:19 *94:19 0.0250779
+11 *93:19 *94:9 0.0108277
+12 *93:19 *94:19 0.234404
+*RES
+1 *419:io_out[4] *94:9 34.816 
+2 *94:9 *419:io_oeb[4] 7.672 
+3 *94:9 *94:19 585.624 
+4 *94:19 *94:21 4.5 
+5 *94:21 io_out[25] 1047.96 
+*END
+
+*D_NET *95 0.559707
+*CONN
+*P io_out[26] O
+*I *419:io_oeb[5] O *D user_proj_example
+*I *419:io_out[5] O *D user_proj_example
+*CAP
+1 io_out[26] 0.11949
+2 *419:io_oeb[5] 0.0004517
+3 *419:io_out[5] 0.00206701
+4 *95:21 0.11949
+5 *95:19 0.00847239
+6 *95:9 0.0109911
+7 *95:19 *96:9 0.0108277
+8 *95:19 *96:19 0.106515
+9 *94:19 *95:9 0.0109042
+10 *94:19 *95:19 0.170498
+*RES
+1 *419:io_out[5] *95:9 35.024 
+2 *95:9 *419:io_oeb[5] 7.88 
+3 *95:9 *95:19 425.88 
+4 *95:19 *95:21 4.5 
+5 *95:21 io_out[26] 1048.16 
+*END
+
+*D_NET *96 0.431096
+*CONN
+*P io_out[27] O
+*I *419:io_oeb[6] O *D user_proj_example
+*I *419:io_out[6] O *D user_proj_example
+*CAP
+1 io_out[27] 0.119534
+2 *419:io_oeb[6] 0.000495822
+3 *419:io_out[6] 0.00210007
+4 *96:21 0.119534
+5 *96:19 0.00803366
+6 *96:9 0.0106295
+7 *96:19 *97:9 0.0108293
+8 *96:19 *97:19 0.0425976
+9 *95:19 *96:9 0.0108277
+10 *95:19 *96:19 0.106515
+*RES
+1 *419:io_out[6] *96:9 35.232 
+2 *96:9 *419:io_oeb[6] 8.088 
+3 *96:9 *96:19 266.136 
+4 *96:19 *96:21 4.5 
+5 *96:21 io_out[27] 1048.37 
+*END
+
+*D_NET *97 0.310275
+*CONN
+*P io_out[28] O
+*I *419:io_oeb[7] O *D user_proj_example
+*I *419:io_out[7] O *D user_proj_example
+*CAP
+1 io_out[28] 0.119578
+2 *419:io_oeb[7] 0.000631781
+3 *419:io_out[7] 0.00214178
+4 *97:21 0.119578
+5 *97:19 0.00607241
+6 *97:9 0.00884597
+7 *96:19 *97:9 0.0108293
+8 *96:19 *97:19 0.0425976
+*RES
+1 *419:io_out[7] *97:9 35.44 
+2 *97:9 *419:io_oeb[7] 8.296 
+3 *97:9 *97:19 106.392 
+4 *97:19 *97:21 4.5 
+5 *97:21 io_out[28] 1048.58 
+*END
+
+*D_NET *98 0.0418708
+*CONN
+*P io_out[29] O
+*I *419:io_oeb[8] O *D user_proj_example
+*I *419:io_out[8] O *D user_proj_example
+*CAP
+1 io_out[29] 0.00065366
+2 *419:io_oeb[8] 0.000315653
+3 *419:io_out[8] 0.000394231
+4 *98:25 0.0128929
+5 *98:23 0.0123178
+6 *98:9 0.00764825
+7 *98:7 0.00764825
+*RES
+1 *419:io_out[8] *98:7 7.256 
+2 *98:7 *98:9 65.416 
+3 *98:9 *419:io_oeb[8] 7.256 
+4 *419:io_out[8] *98:23 5.124 
+5 *98:23 *98:25 110.136 
+6 *98:25 io_out[29] 10.168 
+*END
+
+*D_NET *313 0.126673
+*CONN
+*P wb_clk_i I
+*I *419:wb_clk_i I *D user_proj_example
+*CAP
+1 wb_clk_i 0.000160759
+2 *419:wb_clk_i 0.000756927
+3 *313:13 0.0150659
+4 *313:11 0.0144697
+5 *313:13 *314:13 0.0962197
+*RES
+1 wb_clk_i *313:11 6.008 
+2 *313:11 *313:13 244.088 
+3 *313:13 *419:wb_clk_i 10.688 
+*END
+
+*D_NET *314 0.243854
+*CONN
+*P wb_rst_i I
+*I *419:wb_rst_i I *D user_proj_example
+*CAP
+1 wb_rst_i 0.000136515
+2 *419:wb_rst_i 0.000809266
+3 *314:13 0.0736809
+4 *314:11 0.0730081
+5 *313:13 *314:13 0.0962197
+*RES
+1 wb_rst_i *314:11 5.8 
+2 *314:11 *314:13 759.72 
+3 *314:13 *419:wb_rst_i 11.312 
+*END
